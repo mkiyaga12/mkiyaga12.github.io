@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .destination {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .destination img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .destination:hover img {
+            transform: scale(1.05);
+        }
+        .destination h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin: 0;
+            padding: 5px 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 3px;
+            font-size: 1.5em;
+        }
+        .description {
+            margin-top: 10px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Rwanda & Uganda</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Discover the Beauty of East Africa</h2>
+            <p>Join me on a journey to explore the stunning landscapes and rich cultures of Rwanda and Uganda. Here are some of the must-visit destinations in these incredible countries.</p>
+        </div>
+
+        <div class="gallery">
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Volcanoes National Park">
+                <h3>Volcanoes National Park, Rwanda</h3>
+                <p class="description">Home to the famous mountain gorillas and spectacular volcanic scenery, this park is a nature lover’s dream.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Nyungwe Forest">
+                <h3>Nyungwe Forest, Rwanda</h3>
+                <p class="description">Explore one of Africa’s oldest rainforests with its rich biodiversity, including chimpanzees and a canopy walkway.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Lake Kivu">
+                <h3>Lake Kivu, Rwanda</h3>
+                <p class="description">A picturesque lake perfect for relaxing, boating, and enjoying the surrounding mountain views.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Bwindi Impenetrable National Park">
+                <h3>Bwindi Impenetrable National Park, Uganda</h3>
+                <p class="description">Famed for its mountain gorilla trekking, Bwindi offers breathtaking forests and unforgettable wildlife experiences.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Murchison Falls National Park">
+                <h3>Murchison Falls National Park, Uganda</h3>
+                <p class="description">Discover Uganda’s largest national park, where the Nile River surges through a narrow gorge creating the spectacular Murchison Falls.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/600x400" alt="Queen Elizabeth National Park">
+                <h3>Queen Elizabeth National Park, Uganda</h3>
+                <p class="description">A diverse park teeming with wildlife, including tree-climbing lions, and the breathtaking Kazinga Channel.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow my journey across Rwanda and Uganda for more travel inspiration and tips!</p>
+    </footer>
+
+</body>
+</html>
+

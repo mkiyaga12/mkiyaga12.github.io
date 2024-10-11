@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin: 0;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 3px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Photography</h1>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 1">
+                <h3>Photo Title 1</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 2">
+                <h3>Photo Title 2</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 3">
+                <h3>Photo Title 3</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 4">
+                <h3>Photo Title 4</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 5">
+                <h3>Photo Title 5</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Photo 6">
+                <h3>Photo Title 6</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
