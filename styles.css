@@ -31,6 +31,8 @@ nav ul li a {
     background-image: url('image1.jpg');
     height: 500px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #hero .overlay {
