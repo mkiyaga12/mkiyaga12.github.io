@@ -28,7 +28,7 @@ nav ul li a {
 
 #hero {
     position: relative;
-    background-image: url('your-hero-image.jpg');
+    background-image: url('image1.jpg');
     height: 500px;
     background-size: cover;
 }
