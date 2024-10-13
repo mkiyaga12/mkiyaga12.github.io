@@ -1,50 +1,121 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header and Navigation */
 header {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #0984e3;
+    padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-#hero {
-    position: relative;
-    background-image: url('your-hero-image.jpg');
-    height: 500px;
-    background-size: cover;
+nav a:hover {
+    color: #dfe6e9;
 }
 
-#hero .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Contact Form */
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    transition: border-color 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #74b9ff;
+    outline: none;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #74b9ff;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d3436;
     color: white;
     text-align: center;
+    padding: 15px 0;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
 }
