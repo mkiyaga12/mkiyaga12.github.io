@@ -1,141 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel | Nature & Wildlife Photograph</title>
-     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f4f6;
-        }
-        header {
-            background-color: #0984e3;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .intro p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .destination {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .destination img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-        .destination:hover img {
-            transform: scale(1.05);
-        }
-        .destination h3 {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            margin: 0;
-            padding: 5px 15px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            border-radius: 3px;
-            font-size: 1.5em;
-        }
-        .description {
-            margin-top: 10px;
-            color: #555;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2d3436;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel | Nature & Wildlife Photography</title>
+  <link rel="stylesheet" href="../styles.css">
 
-      <!-- Header with Navigation -->
+  <style>
+    /* Basic Reset and Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Header Navigation */
+    header {
+      background-color: #2f4f4f;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Section */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    section p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Destinations Section */
+    .destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .destination-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .destination-card:hover {
+      transform: scale(1.05);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .destination-card h3 {
+      padding: 15px;
+      background-color: #2f4f4f;
+      color: white;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #2d3436;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
   <header>
-    <h1>Destinations</h1>
+    <h1>Travel Adventures</h1>
     <nav>
-      <a href="/index">Home</a>
-	    <a href="/pages/about">About</a>
-	    <a href="/pages/travel">Travel</a>
-            <a href="/pages/photography">Photography</a>
-	    <a href="/pages/gallery">Gallery</a>
-            <a href="/pages/contact">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../pages/gallery.html">Gallery</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/contact.html">Contact</a>
     </nav>
   </header>
 
-    <div class="container">
-        <div class="intro">
-            <h2>Discover the Beauty of East Africa</h2>
-            <p>Join me on a journey to explore the stunning landscapes and rich cultures of Rwanda and Uganda. Here are some of the must-visit destinations in these incredible countries.</p>
-        </div>
+  <!-- Content Section -->
+  <div class="container">
+    <section>
+      <p>Welcome to my travel adventures!</p>
+      <p>
+        Traveling through Rwanda and Uganda has taken me on unforgettable journeys, from the towering Rwenzori ranges to the heart of Bwindi’s dense forests. Each trip offers a new perspective on the rich biodiversity and cultural heritage of these regions.
+      </p>
+      <p>
+        Whether it's gorilla trekking in the misty mountains or discovering the playful antics of golden monkeys, every destination leaves me with new stories to capture. Hiking the Rwenzori Mountains is a personal favorite – the challenging trails, icy glaciers, and breathtaking views make it a photographer's paradise.
+      </p>
+      <p>
+        When I’m not chasing wildlife, I enjoy engaging with the local communities, learning about their traditions, and experiencing the warmth of their hospitality. Traveling isn't just about the places – it’s about the people and the moments that make the journey special.
+      </p>
+    </section>
 
-        <div class="gallery">
-            <div class="destination">
-                <img src="https://via.placeholder.com/600x400" alt="Volcanoes National Park">
-                <h3>Volcanoes National Park, Rwanda</h3>
-                <p class="description">Home to the famous mountain gorillas and spectacular volcanic scenery, this park is a nature lover’s dream.</p>
-            </div>
-            <div class="destination">
-                <img src="https://via.placeholder.com/600x400" alt="Nyungwe National Park">
-                <h3>Nyungwe National Park, Rwanda</h3>
-                <p class="description">Explore one of Africa’s oldest rainforests with its rich biodiversity, including chimpanzees and a canopy walkway.</p>
-            </div>
-            <div class="destination">
-                <img src="https://flic.kr/p/2ovJZya/600x400" alt="Lake Kivu">
-                <h3>Lake Kivu, Rwanda</h3>
-                <p class="description">A picturesque lake perfect for relaxing, boating, and enjoying the surrounding mountain views.</p>
-            </div>
-            <div class="destination">
-                <img src="https://via.placeholder.com/600x400" alt="Bwindi Impenetrable National Park">
-                <h3>Bwindi Impenetrable National Park, Uganda</h3>
-                <p class="description">Famed for its mountain gorilla trekking, Bwindi offers breathtaking forests and unforgettable wildlife experiences.</p>
-            </div>
-            <div class="destination">
-                <img src="https://via.placeholder.com/600x400" alt="Murchison Falls National Park">
-                <h3>Murchison Falls National Park, Uganda</h3>
-                <p class="description">Discover Uganda’s largest national park, where the Nile River surges through a narrow gorge creating the spectacular Murchison Falls.</p>
-            </div>
-            <div class="destination">
-                <img src="https://via.placeholder.com/600x400" alt="Queen Elizabeth National Park">
-                <h3>Queen Elizabeth National Park, Uganda</h3>
-                <p class="description">A diverse park teeming with wildlife, including tree-climbing lions, and the breathtaking Kazinga Channel.</p>
-            </div>
-        </div>
-    </div>
+    <!-- Destinations Section -->
+    <section class="destinations">
+      <div class="destination-card">
+        <img src="https://via.placeholder.com/300x180" alt="Rwenzori Mountains">
+        <h3>Rwenzori Mountains</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://via.placeholder.com/300x180" alt="Bwindi Impenetrable Forest">
+        <h3>Bwindi Impenetrable Forest</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://via.placeholder.com/300x180" alt="Akagera National Park">
+        <h3>Akagera National Park</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://via.placeholder.com/300x180" alt="Volcanoes National Park">
+        <h3>Volcanoes National Park</h3>
+      </div>
+    </section>
+  </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 mkiyaga12. All Rights Reserved.</p>
-    </footer>
-
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 mkiyaga. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
