@@ -10,18 +10,66 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <style>
-        body {
-            background-color: #f3f4f6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Navigation Styles */
+        header {
+            background-color: #0984e3;
             padding: 20px;
         }
 
-        .content {
-            max-width: 600px;
-            margin: 40px auto;
-            text-align: center;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-	.footer {
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a: hover {
+            color: #dfe6e9;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: white;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .footer {
             background-color: #2d3436;
             color: white;
             text-align: center;
@@ -32,11 +80,13 @@
 <body>
 
     <header>
+
         <nav>
-            <a href="index">Home</a>
-            <a href="/pages/about">About</a>
+		<a href="index">Home</a>
+	    <a href="/pages/about">About</a>
 	    <a href="/pages/travel">Travel</a>
             <a href="/pages/photography">Photography</a>
+	    <a href="/pages/gallery">Gallery</a>
             <a href="/pages/contact">Contact</a>
         </nav>
     </header>
