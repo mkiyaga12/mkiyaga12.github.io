@@ -1,143 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nature & Wildlife Photography</title>
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset and Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    /* Header Navigation */
+    header {
+      background-color: #2f4f4f;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    header h1 {
+      color: #fff;
+      font-size: 28px;
+    }
 
-        body {
-            background: linear-gradient(135deg, #74b9ff, #a29bfe);
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
 
-        .contact-container {
-            width: 100%;
-            max-width: 500px;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+    /* Body Section */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+    .container h2 {
+      color: #2f4f4f;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      border-bottom: 2px solid #2d3436;
+      padding-bottom: 5px;
+    }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-            color: #555;
-        }
+    .container p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
 
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9fafb;
-            transition: border-color 0.3s;
-        }
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
 
-        input:focus, textarea:focus {
-            border-color: #74b9ff;
-            outline: none;
-        }
+    form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-        .submit-btn {
-            width: 100%;
-            padding: 15px;
-            background-color: #0984e3;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-        .submit-btn:hover {
-            background-color: #74b9ff;
-        }
+    form button {
+      padding: 10px;
+      background-color: #2f4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-        .success-message {
-            display: none;
-            margin-top: 20px;
-            text-align: center;
-            color: #00b894;
-            font-weight: 600;
-        }
+    form button:hover {
+      background-color: #4f6f6f;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .contact-container {
-                padding: 30px;
-            }
-        }
-    </style>
+    /* Footer */
+    footer {
+      background-color: #2d3436;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- Header -->
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/travel.html">Travel</a>
+      <a href="pages/photography.html">Photography</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <div class="contact-container">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Write your message"></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-            <p class="success-message" id="successMessage">Thanks for reaching out! I'll get back to you shortly.</p>
-        </form>
-    </div>
+  <!-- Body Section -->
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions, comments, or just want to connect, feel free to reach out to me using the form below.</p>
 
-    <script>
-        const form = document.getElementById('contactForm');
-        const successMessage = document.getElementById('successMessage');
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-            // Simulate form submission and show success message
-            setTimeout(() => {
-                form.reset();
-                successMessage.style.display = 'block';
-            }, 500);
-        });
-    </script>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 mkiyaga. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
-
