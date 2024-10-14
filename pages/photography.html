@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photography | Nature & Wildlife Photography</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Basic Reset and Fonts */
+    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
@@ -40,149 +40,104 @@
       text-decoration: underline;
     }
 
-    /* Content Section */
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-
-    .photography-section {
-      margin-top: 30px;
-    }
-
-    .photography-section h2 {
-      margin-bottom: 15px;
-      font-size: 24px;
-      color: #2f4f4f;
-      text-align: center;
-      border-bottom: 2px solid #2d3436;
-      padding-bottom: 5px;
-    }
-
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 15px;
-    }
-
-    .photo-card {
-      background-color: #f5f5f5;
-      border-radius: 10px;
+    /* Section Styling */
+    .section {
+      margin: 40px auto;
+      width: 90%;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+      position: relative;
     }
 
-    .photo-card:hover {
-      transform: scale(1.05);
+    .image-slider {
+      display: flex;
+      width: 200%; /* Twice the width for seamless sliding */
+      animation: slide-right 10s linear infinite;
     }
 
-    .photo-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    .section:nth-child(even) .image-slider {
+      animation: slide-left 10s linear infinite;
     }
 
-    .photo-card h3 {
-      padding: 10px;
-      background-color: #2f4f4f;
-      color: white;
-      text-align: center;
+    .image-slider img {
+      width: 25%; /* Four images in a row */
+      flex-shrink: 0;
     }
 
-    /* Footer Styling */
+    @keyframes slide-right {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes slide-left {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Footer */
     footer {
       background-color: #2d3436;
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 15px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    footer p {
-      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- Header -->
   <header>
-    <h1>Photography Gallery</h1>
+    <h1>Photography</h1>
     <nav>
-      <a href="../index">Home</a>
-	    <a href="/pages/travel">Travel</a>
-            <a href="/pages/photography">Photography</a>
-	    <a href="/pages/about">About</a>
-            <a href="/pages/contact">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="pages/travel">Travel</a>
+      <a href="pages/photography">Photography</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Content Section -->
-  <div class="container">
-    <section class="photography-section">
-      <h2>Wildlife Photography</h2>
-      <div class="photo-grid">
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Wildlife Image 1">
-          <h3>Lion in Akagera</h3>
-        </div>
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Wildlife Image 2">
-          <h3>Mountain Gorilla</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="photography-section">
-      <h2>Landscape Photography</h2>
-      <div class="photo-grid">
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Landscape Image 1">
-          <h3>Rwenzori Mountains</h3>
-        </div>
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Landscape Image 2">
-          <h3>Lake Kivu Sunset</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="photography-section">
-      <h2>Nature Photography</h2>
-      <div class="photo-grid">
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Nature Image 1">
-          <h3>Rainforest Flora</h3>
-        </div>
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Nature Image 2">
-          <h3>Tropical Butterflies</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="photography-section">
-      <h2>Sunset Photography</h2>
-      <div class="photo-grid">
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Sunset Image 1">
-          <h3>Sunset Over Lake Victoria</h3>
-        </div>
-        <div class="photo-card">
-          <img src="https://via.placeholder.com/300x180" alt="Sunset Image 2">
-          <h3>Golden Horizon</h3>
-        </div>
-      </div>
-    </section>
+  <!-- Photography Sections -->
+  <div class="section">
+    <h2>Wildlife Photography</h2>
+    <div class="image-slider">
+      <img src="https://cdn.pixabay.com/photo/2018/08/23/11/02/elephant-3628250_1280.jpg" alt="Elephant">
+      <img src="https://cdn.pixabay.com/photo/2019/12/10/14/14/mountain-gorilla-4685601_1280.jpg" alt="Mountain Gorilla">
+      <img src="https://cdn.pixabay.com/photo/2017/02/01/17/08/rwanda-2032841_1280.jpg" alt="Hills of Rwanda">
+      <img src="https://cdn.pixabay.com/photo/2016/11/22/21/42/uganda-1854019_1280.jpg" alt="Savannah in Uganda">
+    </div>
   </div>
 
-  <!-- Footer Section -->
+  <div class="section">
+    <h2>Landscape Photography</h2>
+    <div class="image-slider">
+      <img src="https://cdn.pixabay.com/photo/2020/02/14/09/52/rwanda-4849395_1280.jpg" alt="Lake in Rwanda">
+      <img src="https://cdn.pixabay.com/photo/2018/04/06/12/11/africa-3294544_1280.jpg" alt="Forest Landscape">
+      <img src="https://cdn.pixabay.com/photo/2017/12/17/14/12/sunset-3022734_1280.jpg" alt="Sunset">
+      <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/uganda-3600082_1280.jpg" alt="Mountains">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Nature Photography</h2>
+    <div class="image-slider">
+      <img src="https://cdn.pixabay.com/photo/2015/04/17/17/42/giraffes-728649_1280.jpg" alt="Giraffes">
+      <img src="https://cdn.pixabay.com/photo/2020/03/27/08/15/volcanoes-national-park-4970898_1280.jpg" alt="Volcanoes">
+      <img src="https://cdn.pixabay.com/photo/2019/12/12/18/26/gorilla-4690031_1280.jpg" alt="Gorilla in Rwanda">
+      <img src="https://cdn.pixabay.com/photo/2021/02/28/20/59/ugandan-cob-6058457_1280.jpg" alt="Ugandan Kob">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Sunset Photography</h2>
+    <div class="image-slider">
+      <img src="https://cdn.pixabay.com/photo/2016/11/21/16/39/sunset-1846250_1280.jpg" alt="Sunset in Uganda">
+      <img src="https://cdn.pixabay.com/photo/2016/12/09/13/15/africa-1897937_1280.jpg" alt="Sunset Silhouette">
+      <img src="https://cdn.pixabay.com/photo/2020/02/01/19/32/sunset-4813234_1280.jpg" alt="Sunset Over Water">
+      <img src="https://cdn.pixabay.com/photo/2018/01/04/22/13/uganda-3063260_1280.jpg" alt="Uganda Sunset">
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 mkiyaga. All Rights Reserved.</p>
   </footer>
