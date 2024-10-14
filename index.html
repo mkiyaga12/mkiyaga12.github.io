@@ -94,6 +94,48 @@
       }
     }
 
+    <!-- CSS for Slideshow -->
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    animation: slide 20s infinite; /* Adjust duration for speed */
+  }
+
+  .slide {
+    min-width: 100%;
+    transition: transform 1s ease;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); } /* Stay for a moment */
+    30% { transform: translateX(-100%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+
+<!-- Slideshow HTML Structure -->
+<div class="slideshow-container">
+  <div class="slides">
+    <div class="slide">
+      <img src="image1.jpg" alt="Nature Image 1">
+    </div>
+    <div class="slide">
+      <img src="image2.jpg" alt="Nature Image 2">
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Nature Image 3">
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+
     /* Footer */
     footer {
       background-color: #2d3436;
