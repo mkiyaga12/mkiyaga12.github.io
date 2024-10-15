@@ -49,13 +49,17 @@
     }
 
     .image-slider {
-      display: flex;
-      width: 200%; /* Twice the width for seamless sliding */
-      animation: slide-right 10s linear infinite;
+      width: 300px;
+      height: 200px;
+      margin-right: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+      display: inline-block;
+      animation: slide-right 30s linear infinite;
     }
 
     .section:nth-child(even) .image-slider {
-      animation: slide-left 20s linear infinite;
+      animation: slide-left 30s linear infinite;
     }
 
     .image-slider img {
@@ -88,11 +92,11 @@
   <header>
     <h1>Photography</h1>
     <nav>
-      <a href="../index.html">Home</a>
+      <a href="../index">Home</a>
       <a href="pages/travel">Travel</a>
       <a href="pages/photography">Photography</a>
-      <a href="pages/about.html">About</a>
-      <a href="pages/contact.html">Contact</a>
+      <a href="pages/about">About</a>
+      <a href="pages/contact">Contact</a>
     </nav>
   </header>
 
