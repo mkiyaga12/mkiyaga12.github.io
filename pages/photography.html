@@ -27,6 +27,8 @@
     header h1 {
       color: #fff;
       font-size: 28px;
+      margin-bottom: 10px;
+      text-align: center; /* Ensure text is centered */
     }
 
     nav a {
@@ -48,23 +50,28 @@
       position: relative;
     }
 
+    .image-slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 300px; /* Match home page slideshow height */
+    }
+
     .image-slider {
-      width: 300px;
-      height: 200px;
-      margin-right: 10px;
-      border-radius: 10px;
-      object-fit: cover;
-      display: inline-block;
-      animation: slide-right 30s linear infinite;
+      display: flex;
+      width: 200%; /* Twice the width for seamless sliding */
+      animation: slide-right 10s linear infinite;
     }
 
     .section:nth-child(even) .image-slider {
-      animation: slide-left 30s linear infinite;
+      animation: slide-left 10s linear infinite;
     }
 
     .image-slider img {
       width: 25%; /* Four images in a row */
       flex-shrink: 0;
+      height: 300px; /* Ensure all images fit the container */
+      object-fit: cover; /* Maintain aspect ratio, cover entire area */
     }
 
     @keyframes slide-right {
@@ -92,52 +99,60 @@
   <header>
     <h1>Photography</h1>
     <nav>
-      <a href="../index">Home</a>
-      <a href="pages/travel">Travel</a>
-      <a href="pages/photography">Photography</a>
-      <a href="pages/about">About</a>
-      <a href="pages/contact">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="travel.html">Travel</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <!-- Photography Sections -->
   <div class="section">
     <h2>Wildlife Photography</h2>
-    <div class="image-slider">
-      <img src="https://via.placeholder.com/300x200" alt="Elephant">
-      <img src="https://via.placeholder.com/300x200" alt="Mountain Gorilla">
-      <img src="https://via.placeholder.com/300x200" alt="Hills of Rwanda">
-      <img src="https://via.placeholder.com/300x200" alt="Savannah in Uganda">
+    <div class="image-slider-container">
+      <div class="image-slider">
+        <img src="https://via.placeholder.com/600x300?text=Wildlife+Image+1" alt="Wildlife Image 1">
+        <img src="https://via.placeholder.com/600x300?text=Wildlife+Image+2" alt="Wildlife Image 2">
+        <img src="https://via.placeholder.com/600x300?text=Wildlife+Image+3" alt="Wildlife Image 3">
+        <img src="https://via.placeholder.com/600x300?text=Wildlife+Image+4" alt="Wildlife Image 4">
+      </div>
     </div>
   </div>
 
   <div class="section">
     <h2>Landscape Photography</h2>
-    <div class="image-slider">
-      <img src="https://via.placeholder.com/300x200" alt="Lake in Rwanda">
-      <img src="https://via.placeholder.com/300x200" alt="Forest Landscape">
-      <img src="https://via.placeholder.com/300x200" alt="Sunset">
-      <img src="https://via.placeholder.com/300x200" alt="Mountains">
+    <div class="image-slider-container">
+      <div class="image-slider">
+        <img src="https://via.placeholder.com/600x300?text=Landscape+Image+1" alt="Landscape Image 1">
+        <img src="https://via.placeholder.com/600x300?text=Landscape+Image+2" alt="Landscape Image 2">
+        <img src="https://via.placeholder.com/600x300?text=Landscape+Image+3" alt="Landscape Image 3">
+        <img src="https://via.placeholder.com/600x300?text=Landscape+Image+4" alt="Landscape Image 4">
+      </div>
     </div>
   </div>
 
   <div class="section">
     <h2>Nature Photography</h2>
-    <div class="image-slider">
-      <img src="https://via.placeholder.com/300x200" alt="Giraffes">
-      <img src="https://via.placeholder.com/300x200" alt="Volcanoes">
-      <img src="https://via.placeholder.com/300x200" alt="Gorilla in Rwanda">
-      <img src="https://via.placeholder.com/300x200" alt="Ugandan Kob">
+    <div class="image-slider-container">
+      <div class="image-slider">
+        <img src="https://via.placeholder.com/600x300?text=Nature+Image+1" alt="Nature Image 1">
+        <img src="https://via.placeholder.com/600x300?text=Nature+Image+2" alt="Nature Image 2">
+        <img src="https://via.placeholder.com/600x300?text=Nature+Image+3" alt="Nature Image 3">
+        <img src="https://via.placeholder.com/600x300?text=Nature+Image+4" alt="Nature Image 4">
+      </div>
     </div>
   </div>
 
   <div class="section">
     <h2>Sunset Photography</h2>
-    <div class="image-slider">
-      <img src="https://via.placeholder.com/300x200" alt="Sunset in Uganda">
-      <img src="https://via.placeholder.com/300x200" alt="Sunset Silhouette">
-      <img src="https://via.placeholder.com/300x200" alt="Sunset Over Water">
-      <img src="https://via.placeholder.com/300x200" alt="Uganda Sunset">
+    <div class="image-slider-container">
+      <div class="image-slider">
+        <img src="https://via.placeholder.com/600x300?text=Sunset+Image+1" alt="Sunset Image 1">
+        <img src="https://via.placeholder.com/600x300?text=Sunset+Image+2" alt="Sunset Image 2">
+        <img src="https://via.placeholder.com/600x300?text=Sunset+Image+3" alt="Sunset Image 3">
+        <img src="https://via.placeholder.com/600x300?text=Sunset+Image+4" alt="Sunset Image 4">
+      </div>
     </div>
   </div>
 
