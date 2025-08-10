@@ -53,8 +53,7 @@
 
     /* Section */
     .section {
-      width: 90%;
-      max-width: 1200px;
+      width: 100%;
       margin: 40px auto;
     }
 
@@ -69,19 +68,61 @@
     .tile-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 0;
+    }
+
+    .tile {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
 
     .tile img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 8px;
+      display: block;
+      border: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
       transition: transform 0.3s ease;
+      cursor: pointer;
     }
 
     .tile img:hover {
       transform: scale(1.05);
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 10000;
     }
 
     /* Footer */
@@ -169,9 +210,40 @@
     </div>
   </div>
 
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Expanded view">
+  </div>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 mkiyaga. All Rights Reserved.</p>
   </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    document.querySelectorAll('.tile img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
