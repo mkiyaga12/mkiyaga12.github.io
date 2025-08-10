@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography | Nature & Wildlife Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #2f4f4f;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section */
+    .section {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2f4f4f;
+    }
+
+    /* Tile Grid */
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .tile img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2d3436;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+    }
+
+    /* Responsive Nav */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Photography</h1>
+    <nav aria-label="Main navigation">
+      <a href="../index">Home</a>
+      <a href="/pages/travel">Travel</a>
+      <a href="/pages/photography">Photography</a>
+      <a href="/pages/about">About</a>
+      <a href="/pages/contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Wildlife Section -->
+  <div class="section">
+    <h2>Wildlife Photography</h2>
+    <div class="tile-grid">
+      <div class="tile"><img src="/assets/images/image32.jpg" alt="Wildlife Image 1" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image30.jpg" alt="Wildlife Image 2" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image29.jpg" alt="Wildlife Image 3" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image26.jpg" alt="Wildlife Image 4" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- Landscape Section -->
+  <div class="section">
+    <h2>Landscape Photography</h2>
+    <div class="tile-grid">
+      <div class="tile"><img src="/assets/images/image25.jpg" alt="Landscape Image 1" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image37.jpg" alt="Landscape Image 2" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image11.jpg" alt="Landscape Image 3" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image7.jpg" alt="Landscape Image 4" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- Nature Section -->
+  <div class="section">
+    <h2>Nature Photography</h2>
+    <div class="tile-grid">
+      <div class="tile"><img src="/assets/images/image17.jpg" alt="Nature Image 1" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image9.jpg" alt="Nature Image 2" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image10.jpg" alt="Nature Image 3" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image31.jpg" alt="Nature Image 4" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- Sunset Section -->
+  <div class="section">
+    <h2>Sunset Photography</h2>
+    <div class="tile-grid">
+      <div class="tile"><img src="/assets/images/image28.jpg" alt="Sunset Image 1" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image6.jpg" alt="Sunset Image 2" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image4.jpg" alt="Sunset Image 3" loading="lazy"></div>
+      <div class="tile"><img src="/assets/images/image2.jpg" alt="Sunset Image 4" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 mkiyaga. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
