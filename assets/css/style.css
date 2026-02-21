@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background: #f8f8f8;
   color: #222;
   line-height: 1.6;
@@ -21,7 +21,7 @@ img {
 }
 
 h1, h2, h3 {
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 
@@ -45,6 +45,7 @@ section {
   border-radius: 4px;
   margin-top: 20px;
   transition: 0.3s ease;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -86,6 +87,7 @@ section {
   color: #fff;
   position: relative;
   padding-bottom: 4px;
+  font-weight: 500;
 }
 
 .nav-menu a:hover,
@@ -135,7 +137,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.60);
+  background: rgba(0,0,0,0.65); /* DARKER OVERLAY */
 }
 
 .hero-content {
@@ -143,16 +145,19 @@ section {
   text-align: center;
   color: #fff;
   max-width: 700px;
+  padding: 20px;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.7); /* TEXT SHADOW */
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7); /* TEXT SHADOW */
 }
 
 /* =========================================
@@ -200,6 +205,7 @@ section {
 .card-body h3,
 .dest-body h3 {
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .read-more {
