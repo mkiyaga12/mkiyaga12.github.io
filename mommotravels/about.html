@@ -1,306 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="/css/style.css" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Mommo Travels</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-      color: #222;
-      line-height: 1.7;
-      background: #faf7f3;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #e67e22;
-      color: #fff;
-      border-radius: 4px;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    /* HERO */
-    .hero {
-      height: 70vh;
-      background: url('about-hero-landscape.jpg') center/cover no-repeat;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.75)
-      );
-    }
-
-    .hero-content {
-      position: relative;
-      max-width: 800px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 650px;
-      margin: 0 auto 24px;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 70px 8%;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      text-align: left;
-      font-weight: 700;
-    }
-
-    /* STORY SECTION */
-    .story {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: flex-start;
-    }
-
-    .story img {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-
-    .story-text {
-      flex: 1;
-      min-width: 260px;
-    }
-
-    .story-text p {
-      margin-bottom: 16px;
-    }
-
-    .story-text p.lead {
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-
-    /* PHILOSOPHY */
-    .philosophy {
-      background: #f0e5d8;
-      border-radius: 14px;
-      padding: 40px 30px;
-      margin-top: 20px;
-    }
-
-    .pillars {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      margin-top: 20px;
-    }
-
-    .pillar {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px 18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    }
-
-    .pillar h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 1.05rem;
-    }
-
-    .pillar p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    /* BEHIND THE LENS */
-    .behind-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-      margin-top: 25px;
-    }
-
-    .behind-grid img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
-
-    /* CTA */
-    .cta {
-      text-align: center;
-      padding: 60px 8% 80px;
-    }
-
-    .cta p {
-      max-width: 600px;
-      margin: 0 auto 20px;
-      font-size: 1.02rem;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero {
-        height: 60vh;
-      }
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .story {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-      }
-      .story img {
-        margin-bottom: 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>About Mommo Travels</h1>
-      <p>
-        A travel photographer and storyteller tracing the wild edges, quiet moments,
-        and living stories of East Africa’s landscapes.
-      </p>
-      <a href="#story" class="btn">Read My Story</a>
-    </div>
-  </header>
+<header class="hero" style="background-image:url('assets/images/hero/about-hero.jpg')">
+  <div class="hero-content">
+    <h1>About Mommo Travels</h1>
+    <p>A travel photographer and storyteller tracing the wild edges, quiet moments, and living stories of East Africa’s landscapes.</p>
+    <a href="#story" class="btn">Read My Story</a>
+  </div>
+</header>
 
-  <!-- YOUR STORY -->
-  <section id="story">
-    <h2>My Story</h2>
-    <div class="story">
-      <img src="mommo-portrait.jpg" alt="Portrait of Mommo">
-      <div class="story-text">
-        <p class="lead">
-          Hi, I’m Mommo — a travel photographer and storyteller drawn to the
-          mountains, lakes, and wildlife of East Africa.
-        </p>
-        <p>
-          My journey began with simple walks and borrowed cameras, chasing light
-          across hillsides and watching how the world softened at sunrise and
-          sharpened at dusk. Over time, those quiet moments turned into a calling:
-          to document the places and creatures that move me, and to share the
-          stories that live between them.
-        </p>
-        <p>
-          From misty mornings in the Volcanoes, to long drives across the savannah,
-          to still evenings by Lake Kivu, I’ve learned that travel is less about
-          ticking off destinations and more about paying attention — to the land,
-          to the people, and to the silence in between.
-        </p>
-        <p>
-          Mommo Travels is my way of inviting you into that way of seeing: slower,
-          softer, and always a little bit in awe.
-        </p>
+<section id="story">
+  <h2>My Story</h2>
+  <div class="story">
+    <img src="assets/images/portraits/mommo.jpg" alt="Portrait of Mommo">
+    <div class="story-text">
+      <p class="lead">Hi, I’m Mommo — a travel photographer and storyteller drawn to the mountains, lakes, and wildlife of East Africa.</p>
+      <p>My journey began with simple walks and borrowed cameras...</p>
+      <p>From misty mornings in the Volcanoes to long drives across the savannah...</p>
+      <p>Mommo Travels is my way of inviting you into that way of seeing.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="philosophy">
+    <h2>How I See Travel & Photography</h2>
+    <p>Every journey is a conversation between place and person...</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Slow Travel</h3>
+        <p>I prefer to linger...</p>
+      </div>
+      <div class="pillar">
+        <h3>Respect for Wildlife</h3>
+        <p>The animals I photograph are not props...</p>
+      </div>
+      <div class="pillar">
+        <h3>Story Over Spectacle</h3>
+        <p>I’m less interested in the perfect postcard...</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PHILOSOPHY -->
-  <section>
-    <div class="philosophy">
-      <h2>How I See Travel & Photography</h2>
-      <p>
-        Every journey is a conversation between place and person. My work sits at
-        the intersection of observation, respect, and story — guided by a deep
-        love for East Africa’s wild spaces and the lives that move through them.
-      </p>
+<section>
+  <h2>Behind the Lens</h2>
+  <p>These are some of the moments that shape how I see...</p>
+  <div class="behind-grid">
+    <img src="assets/images/behind/1.jpg">
+    <img src="assets/images/behind/2.jpg">
+    <img src="assets/images/behind/3.jpg">
+    <img src="assets/images/behind/4.jpg">
+  </div>
+</section>
 
-      <div class="pillars">
-        <div class="pillar">
-          <h3>Slow Travel</h3>
-          <p>
-            I prefer to linger — to return to the same trail, the same shoreline,
-            the same village — and notice what changes, and what doesn’t.
-          </p>
-        </div>
-        <div class="pillar">
-          <h3>Respect for Wildlife</h3>
-          <p>
-            The animals I photograph are not props; they are beings with their own
-            rhythms and boundaries. My work is always at a respectful distance.
-          </p>
-        </div>
-        <div class="pillar">
-          <h3>Story Over Spectacle</h3>
-          <p>
-            I’m less interested in the perfect postcard and more in the small,
-            honest details that make a place feel alive and real.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BEHIND THE LENS -->
-  <section>
-    <h2>Behind the Lens</h2>
-    <p>
-      These are some of the moments that shape how I see — from early-morning
-      hikes to quiet pauses with the camera lowered, just listening.
-    </p>
-    <div class="behind-grid">
-      <img src="behind-1.jpg" alt="Mommo photographing in the mountains">
-      <img src="behind-2.jpg" alt="Silhouette at sunset over Lake Kivu">
-      <img src="behind-3.jpg" alt="On a trail in the hills">
-      <img src="behind-4.jpg" alt="Camera pointed toward wildlife in the distance">
-    </div>
-  </section>
-
-  <!-- CALL TO ACTION -->
-  <section class="cta">
-    <h2>Walk This Journey With Me</h2>
-    <p>
-      Whether you’re here for the photographs, the stories, or to dream up a
-      collaboration, I’m glad you’ve found your way to this corner of the map.
-    </p>
-    <a href="/contact" class="btn">Get in Touch</a>
-  </section>
+<section class="cta">
+  <h2>Walk This Journey With Me</h2>
+  <p>Whether you’re here for the photographs or the stories...</p>
+  <a href="contact.html" class="btn">Get in Touch</a>
+</section>
 
 </body>
 </html>
