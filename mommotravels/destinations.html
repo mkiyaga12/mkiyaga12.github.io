@@ -1,32 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="/css/style.css" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Destinations – Mommo Travels</title>
-  <style>
-    body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:#faf7f3;color:#222;}
-    .hero{height:45vh;background:url('destinations-hero.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 20px;}
-    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.55);}
-    .hero-content{position:relative;max-width:700px;}
-    .hero h1{font-size:2.6rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
-    .hero p{font-size:1.05rem;}
-    section{padding:60px 8%;max-width:1100px;margin:0 auto;}
-    h2{font-size:2rem;margin-bottom:25px;}
-    .dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
-    .dest-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06);display:flex;flex-direction:column;}
-    .dest-card img{width:100%;height:200px;object-fit:cover;}
-    .dest-body{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column;}
-    .dest-body h3{margin:0 0 8px;font-size:1.2rem;}
-    .dest-body p{font-size:0.95rem;margin-bottom:12px;}
-    .dest-links a{display:inline-block;margin-right:10px;font-size:0.9rem;color:#e67e22;text-decoration:none;font-weight:600;}
-    @media(max-width:768px){.hero{height:40vh;} .hero h1{font-size:2.1rem;}}
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="hero">
+<header class="hero" style="background-image:url('assets/images/hero/destinations-hero.jpg')">
   <div class="hero-content">
     <h1>Destinations</h1>
     <p>Tracing the contours of Rwanda and Uganda — from misty peaks to sunlit lakes and forest trails.</p>
@@ -38,10 +20,10 @@
 
   <div class="dest-grid">
     <article class="dest-card">
-      <img src="rwanda-hero.jpg" alt="">
+      <img src="assets/images/destinations/rwanda.jpg">
       <div class="dest-body">
         <h3>Rwanda</h3>
-        <p>Land of a thousand hills, where mist clings to volcanoes and evenings settle softly over Lake Kivu.</p>
+        <p>Land of a thousand hills, where mist clings to volcanoes...</p>
         <div class="dest-links">
           <a href="#">Stories from Rwanda →</a>
           <a href="#">Rwanda Photography →</a>
@@ -50,10 +32,10 @@
     </article>
 
     <article class="dest-card">
-      <img src="uganda-hero.jpg" alt="">
+      <img src="assets/images/destinations/uganda.jpg">
       <div class="dest-body">
         <h3>Uganda</h3>
-        <p>Glacier-tipped mountains, deep lakes, and forests alive with birdsong and primates — the Pearl of Africa.</p>
+        <p>Glacier-tipped mountains, deep lakes, and forests alive with birdsong...</p>
         <div class="dest-links">
           <a href="#">Stories from Uganda →</a>
           <a href="#">Uganda Photography →</a>
