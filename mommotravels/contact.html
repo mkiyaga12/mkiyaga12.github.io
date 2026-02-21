@@ -1,59 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="/css/style.css" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Mommo Travels</title>
-  <style>
-    body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:#faf7f3;color:#222;}
-    .hero{height:35vh;background:url('contact-hero.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 20px;}
-    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.55);}
-    .hero-content{position:relative;max-width:600px;}
-    .hero h1{font-size:2.4rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
-    .hero p{font-size:1rem;}
-
-    section{padding:60px 8%;max-width:800px;margin:0 auto;}
-    h2{font-size:1.8rem;margin-bottom:20px;}
-
-    /* FORM */
-    form{display:grid;grid-template-columns:1fr;gap:16px;margin-top:10px;}
-    label{font-size:0.95rem;font-weight:600;}
-    input,textarea{
-      width:100%;padding:10px 12px;border-radius:6px;border:1px solid #ccc;
-      font-family:inherit;font-size:0.95rem;background:#fff;
-    }
-    textarea{min-height:140px;resize:vertical;}
-
-    .btn{
-      display:inline-block;padding:11px 26px;background:#e67e22;color:#fff;
-      border-radius:4px;font-weight:600;border:none;cursor:pointer;
-    }
-
-    /* EMAIL SECTION */
-    .email-box{
-      background:#fff;
-      padding:20px 24px;
-      border-radius:10px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.06);
-      margin-top:40px;
-    }
-    .email-box p{margin:0 0 8px;font-size:1rem;}
-    .email-box a{
-      color:#e67e22;
-      font-weight:600;
-      text-decoration:none;
-      font-size:1.05rem;
-    }
-
-    /* SOCIAL */
-    .social{margin-top:30px;font-size:0.95rem;}
-    .social a{color:#e67e22;text-decoration:none;margin-right:10px;}
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="hero">
+<header class="hero" style="background-image:url('assets/images/hero/contact-hero.jpg')">
   <div class="hero-content">
     <h1>Contact</h1>
     <p>Questions, collaborations, or just a hello — I’d love to hear from you.</p>
@@ -62,30 +17,21 @@
 
 <section>
   <h2>Send a Message</h2>
-  <p>Share a thought, an idea, or a project you’d like to bring to life. I read every message.</p>
+  <p>Share a thought, an idea, or a project you’d like to bring to life.</p>
 
   <form>
-    <div>
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Your name">
-    </div>
+    <label>Name</label>
+    <input type="text" placeholder="Your name">
 
-    <div>
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="you@example.com">
-    </div>
+    <label>Email</label>
+    <input type="email" placeholder="you@example.com">
 
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message" placeholder="Tell me what’s on your mind..."></textarea>
-    </div>
+    <label>Message</label>
+    <textarea placeholder="Tell me what’s on your mind..."></textarea>
 
-    <div>
-      <button class="btn" type="submit">Send Message</button>
-    </div>
+    <button class="btn">Send Message</button>
   </form>
 
-  <!-- NEW EMAIL SECTION -->
   <div class="email-box">
     <p>Prefer to email me directly?</p>
     <a href="mailto:your-email@example.com">your-email@example.com</a>
@@ -93,9 +39,7 @@
 
   <div class="social">
     Or find me here:
-    <a href="#">Instagram</a> ·
-    <a href="#">Facebook</a> ·
-    <a href="#">Email</a>
+    <a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">Email</a>
   </div>
 </section>
 
