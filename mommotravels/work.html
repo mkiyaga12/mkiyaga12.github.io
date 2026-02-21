@@ -1,32 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="/css/style.css" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work With Me – Mommo Travels</title>
-  <style>
-    body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:#faf7f3;color:#222;}
-    .hero{height:40vh;background:url('work-hero.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 20px;}
-    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.6);}
-    .hero-content{position:relative;max-width:700px;}
-    .hero h1{font-size:2.5rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
-    .hero p{font-size:1.02rem;}
-    section{padding:60px 8%;max-width:1100px;margin:0 auto;}
-    h2{font-size:2rem;margin-bottom:20px;}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:40px;}
-    .service{background:#fff;border-radius:12px;padding:20px 18px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
-    .service h3{margin-top:0;margin-bottom:8px;font-size:1.15rem;}
-    .service p{font-size:0.95rem;margin-bottom:10px;}
-    .samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:10px;}
-    .samples img{width:100%;height:200px;object-fit:cover;border-radius:10px;}
-    .btn{display:inline-block;padding:11px 26px;background:#e67e22;color:#fff;border-radius:4px;font-weight:600;text-decoration:none;}
-    .cta{text-align:center;margin-top:40px;}
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="hero">
+<header class="hero" style="background-image:url('assets/images/hero/work-hero.jpg')">
   <div class="hero-content">
     <h1>Work With Me</h1>
     <p>Let’s create images and stories that honour the landscapes, wildlife, and people of East Africa.</p>
@@ -35,15 +17,18 @@
 
 <section>
   <h2>What I Offer</h2>
+
   <div class="services">
     <div class="service">
       <h3>Travel & Wildlife Photography</h3>
-      <p>On-location photography for conservation projects, lodges, tour operators, and editorial features.</p>
+      <p>On-location photography for conservation projects, lodges, and editorial features.</p>
     </div>
+
     <div class="service">
       <h3>Storytelling & Content</h3>
-      <p>Photo essays, blog features, and narrative pieces that bring your destination or project to life.</p>
+      <p>Photo essays, blog features, and narrative pieces that bring your destination to life.</p>
     </div>
+
     <div class="service">
       <h3>Custom Collaborations</h3>
       <p>Let’s design something unique together — from campaigns to long-form visual stories.</p>
@@ -52,15 +37,15 @@
 
   <h2>Selected Work</h2>
   <div class="samples">
-    <img src="sample-1.jpg" alt="">
-    <img src="sample-2.jpg" alt="">
-    <img src="sample-3.jpg" alt="">
+    <img src="assets/images/work/1.jpg">
+    <img src="assets/images/work/2.jpg">
+    <img src="assets/images/work/3.jpg">
   </div>
 
   <div class="cta">
     <h2>Ready to Talk?</h2>
-    <p>Share your idea, your project, or your destination — and we’ll explore how to tell its story well.</p>
-    <a href="/contact" class="btn">Get in Touch</a>
+    <p>Share your idea or project — and we’ll explore how to tell its story well.</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
   </div>
 </section>
 
