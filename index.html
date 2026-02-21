@@ -1,281 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mommo Travels</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", sans-serif;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            height: 90vh;
-            background: url('your-hero-image.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            position: relative;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.45);
-        }
-
-        .hero-content {
-            position: relative;
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            background: #e67e22;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        /* SECTION WRAPPER */
-        section {
-            padding: 60px 8%;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        /* FEATURED STORIES */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-content h3 {
-            margin-top: 0;
-        }
-
-        .card-content a {
-            color: #e67e22;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* PHOTO GRID */
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .photo-grid img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-
-        /* ABOUT SNAPSHOT */
-        .about {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .about img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        /* DESTINATIONS */
-        .destinations {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .destination {
-            position: relative;
-            height: 220px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .destination img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .destination span {
-            position: absolute;
-            bottom: 10px;
-            left: 15px;
-            color: white;
-            font-size: 1.4rem;
-            font-weight: bold;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-        }
-
-        /* FOOTER */
-        footer {
-            background: #111;
-            color: #ccc;
-            padding: 40px 8%;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 6px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mommo Travels – East African Stories & Photography</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Exploring East Africa Through the Lens</h1>
-            <p>Capturing the wild beauty, quiet moments, and untold stories of Uganda, Rwanda, and beyond.</p>
-            <a href="#stories" class="btn">View My Photography</a>
-        </div>
-    </header>
+<!-- ============================
+     GLOBAL NAVIGATION
+============================ -->
+<header class="nav-header">
+  <div class="nav-container">
+    <div class="nav-brand">MOMMO TRAVELS</div>
 
-    <!-- FEATURED STORIES -->
-    <section id="stories">
-        <h2>Latest Stories From the Road</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="story1.jpg" alt="">
-                <div class="card-content">
-                    <h3>Gorilla Trekking in Volcanoes National Park</h3>
-                    <p>A quiet morning in the mist, a silverback emerging from the foliage — a moment that stays with you.</p>
-                    <a href="#">Read More →</a>
-                </div>
-            </div>
+    <button class="nav-toggle" aria-label="Open Menu">☰</button>
 
-            <div class="card">
-                <img src="story2.jpg" alt="">
-                <div class="card-content">
-                    <h3>Sunset Reflections on Lake Kivu</h3>
-                    <p>Warm light, gentle waves, and the kind of silence that makes you breathe deeper.</p>
-                    <a href="#">Read More →</a>
-                </div>
-            </div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="stories.html">Travel Stories</a>
+      <a href="gallery.html">Photography</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-            <div class="card">
-                <img src="story3.jpg" alt="">
-                <div class="card-content">
-                    <h3>Hiking the Rwenzori Mountains</h3>
-                    <p>A journey through clouds, glaciers, and the raw heart of Africa’s highest ranges.</p>
-                    <a href="#">Read More →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ============================
+     FULLSCREEN HERO
+============================ -->
+<section class="hero fullscreen" style="background-image:url('assets/images/hero/home-hero.jpg')">
+  <div class="hero-content center">
+    <h1>East Africa in Motion</h1>
+    <p>Stories, photographs, and quiet moments from the mountains, lakes, and savannas of Rwanda and Uganda.</p>
+    <a href="stories.html" class="btn">Explore Stories</a>
+  </div>
+</section>
 
-    <!-- PHOTO GRID -->
-    <section>
-        <h2>Wildlife Moments That Moved Me</h2>
-        <div class="photo-grid">
-            <img src="photo1.jpg" alt="">
-            <img src="photo2.jpg" alt="">
-            <img src="photo3.jpg" alt="">
-            <img src="photo4.jpg" alt="">
-            <img src="photo5.jpg" alt="">
-            <img src="photo6.jpg" alt="">
-        </div>
-    </section>
+<!-- ============================
+     INTRO SECTION
+============================ -->
+<section class="intro">
+  <h2>Welcome to Mommo Travels</h2>
+  <p class="lead">
+    A journey through landscapes shaped by mist, light, and memory — told through photography and field notes.
+  </p>
+</section>
 
-    <!-- ABOUT SNAPSHOT -->
-    <section>
-        <h2>About Me</h2>
-        <div class="about">
-            <img src="your-photo.jpg" alt="">
-            <div class="about-text">
-                <p>Hi, I’m Mommo — a travel photographer and storyteller exploring the landscapes, wildlife, and cultures of East Africa. I believe in slow travel, quiet observation, and capturing moments that feel alive.</p>
-                <a class="btn" href="#">Learn More</a>
-            </div>
-        </div>
-    </section>
+<!-- ============================
+     FEATURED STORIES
+============================ -->
+<section class="featured">
+  <h2>Featured Stories</h2>
 
-    <!-- DESTINATIONS -->
-    <section>
-        <h2>Explore by Destination</h2>
-        <div class="destinations">
-            <div class="destination">
-                <img src="uganda.jpg" alt="">
-                <span>Uganda</span>
-            </div>
-            <div class="destination">
-                <img src="rwanda.jpg" alt="">
-                <span>Rwanda</span>
-            </div>
-            <div class="destination">
-                <img src="kenya.jpg" alt="">
-                <span>Kenya</span>
-            </div>
-        </div>
-    </section>
+  <div class="grid-3">
+    <article class="card">
+      <img src="assets/images/stories/gorilla.jpg" alt="">
+      <div class="card-body">
+        <h3>In the Mist with the Gorillas</h3>
+        <p>A morning deep in the forests of Volcanoes National Park.</p>
+        <a href="#" class="read-more">Read Story →</a>
+      </div>
+    </article>
 
-    <!-- FOOTER -->
-    <footer>
-        <p><strong>Mommo Travels</strong></p>
-        <p>Travel stories and wildlife photography from East Africa.</p>
-        <p>Based in Kigali, Rwanda.</p>
-        <p>© 2026 Mommo Travels</p>
-    </footer>
+    <article class="card">
+      <img src="assets/images/stories/kivu.jpg" alt="">
+      <div class="card-body">
+        <h3>Evenings on Lake Kivu</h3>
+        <p>Sunset drifts, wooden boats, and the warmth of lakeside life.</p>
+        <a href="#" class="read-more">Read Story →</a>
+      </div>
+    </article>
 
+    <article class="card">
+      <img src="assets/images/stories/rwenzori.jpg" alt="">
+      <div class="card-body">
+        <h3>Clouds Over the Rwenzori</h3>
+        <p>Footsteps through fog and the quiet of the mountains.</p>
+        <a href="#" class="read-more">Read Story →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================
+     CTA SECTION
+============================ -->
+<section class="cta">
+  <h2>Walk This Journey With Me</h2>
+  <p>Explore the stories, photography, and landscapes that shape East Africa.</p>
+  <a href="gallery.html" class="btn">View the Gallery</a>
+</section>
+
+<!-- ============================
+     GLOBAL FOOTER
+============================ -->
+<footer>
+  <p>© 2026 Mommo Travels — Crafted with heart in East Africa</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
